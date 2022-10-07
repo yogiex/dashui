@@ -8,27 +8,30 @@
     <title>Welcome to Learn Nihongo!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   </head>
+  <style>
+    /* styling this  */
+  </style>
   <body>
 
 
   
     <!-- navigation bar start -->
-    <div class="container">
-      <nav class="navbar" role="navigation" aria-label="main navigation">
+    
+      <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a class="navbar-item" href="https://bulma.io">
             全 Zen LMS
           </a>
           
 
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
 
-        <div class="navbar-menu">
+        <div class="navbar-menu" id="nav-links">
           <div class="navbar-start">
             <a href="" class="navbar-item">Home</a>
             <a href="" class="navbar-item">Staff</a>
@@ -36,31 +39,63 @@
           </div>
 
           <div class="navbar-end">
-            Login
+            <button class="button is-light">Login</button>
           </div>
         </div>
 
       </nav>
-    </div>
+
     <!-- navigation bar ends -->
 
     <!-- content hero -->
-    <div id="hero" class="my-5 px-3">
-      <div class="container">
+    <div id="hero" class="mb-5 px-3 has-background-grey-lighter">
+      <div class="container is-primary">
         <div class="columns">
           <div class="column is-threefifth mt-2">
-            <a href="">Belajar bahasa jepang with yuki-sensei</a>
+            
+            <p class="is-size-1">Belajar bahasa jepang with yuki-sensei</p>
           </div>
           <div class="column is-threefifth mt-2">
-            <a href=""> 全</a>
+            <img src="./public/Japanese-class.jpg" alt="" width="250px" height="250px">
           </div>
         </div>
       </div>
     </div>
+    <!-- end content hero -->
+    
+    
 
-  
+    <div>
+      <p class="has-text-weight-bold is-size-1">Kursus</p>
+    </div>
+    
+    <section class="section">
+      <div class="columns">
+        <div class="column">
+          JLPT N1
+        </div>
+        <div class="column">
+          JLPT N2
+        </div>
+        <div class="column">
+          JLPT N3
+        </div>
+        <div class="column">
+          JLPT N4
+        </div>
+        <div class="column">
+          JLPT N5
+        </div>
+      </div>
+    </section>
 
+  <script>
+    const burgerIcon = document.querySelector("#burger")
+    const navbarMenu = document.querySelector("#nav-links")
 
-  
+    burgerIcon.addEventListener('click', () => {
+      navbarMenu.classList.toggle('is-active')
+    })
+  </script>
   </body>
 </html>
