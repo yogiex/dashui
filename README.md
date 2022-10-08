@@ -1,15 +1,15 @@
 # dashui
-cloning project
+Web Pembelajaran Bahasa Jepang dengan Metode yang menurut kami menyenangkan dan menghibur :D
 
 
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This section should list any major frameworks/libraries used to adonis your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 
 * [![Bulma CSS][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Adonis Js][adonisjs.com]][Adonisjs-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -33,13 +33,14 @@ This is an example of how to list things you need to use the software and how to
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
+- [x] Landing Pages
+- [ ] Add views to another pages in landing page
+- [ ] Add features aboout student to access module
+- [ ] Dashboard
 - [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Add "components" document to easily submit assignment
 - [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+    - [ ] English
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
