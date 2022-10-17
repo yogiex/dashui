@@ -45,3 +45,36 @@ This is an example of how to list things you need to use the software and how to
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Notes
+
+### Setup database
+1. install the packages
+
+```
+npm install @adonisjs/lucid
+```
+
+2. configure lucid
+```
+node ace configure @adonisjs/lucid
+```
+
+3. make migration
+migration merupakan setup schema table
+
+```
+node ace make:migration nama_table
+```
+
+setelah membuat table pada migration lanjut ke migration run
+
+```
+node ace make:migration run
+```
+
+### create shield
+```
+npm i @adonisjs/shield
+```
