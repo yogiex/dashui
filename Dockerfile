@@ -12,4 +12,4 @@ FROM base AS dev
 ENV NODE_ENV=development
 
 
-CMD ["node", "ace", "serve", "--watch"]
+# CMD ["node", "ace", "serve", "--watch"]
