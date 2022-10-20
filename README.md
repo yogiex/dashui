@@ -74,7 +74,59 @@ setelah membuat table pada migration lanjut ke migration run
 node ace make:migration run
 ```
 
+4. running migration
+```
+node ace migration:run
+```
+
 ### create shield
 ```
 npm i @adonisjs/shield
 ```
+
+```
+node ace configure @adonisjs/shield
+```
+
+lalu tambahkan kernel.ts
+```
+() => import('@ioc:Adonis/Addons/Shield')
+```
+
+dibawah bodyparser
+
+### seed database
+1. create seeder file
+
+```
+node ace make:seeder User
+```
+
+2. menjalankan seeding
+```
+node ace db:seed
+```
+
+
+### authentication web based
+```
+npm i @adonisjs/auth
+```
+
+1. install session
+```
+npm i @adonisjs/session
+```
+
+2. configure session
+```
+node ace configure @adonisjs/session
+```
+
+3.
+
+### membuat view
+```
+node ace make:view <nama file view>
+```
+

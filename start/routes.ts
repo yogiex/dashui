@@ -19,7 +19,13 @@
 */
 
 import Route from '@ioc:Adonis/Core/Route'
+import View from '@ioc:Adonis/Core/View'
 
 Route.get('/', async ({ view }) => {
-  return view.render('welcome')
+  return view.render('home')
 })
+
+Route.get('/login', 'UsersController.index')
+Route.post('/login','UsersController.store')
+
+Route.get('/dashboard','DashboardController.index')

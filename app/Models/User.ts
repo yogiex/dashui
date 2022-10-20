@@ -30,7 +30,7 @@ export default class User extends BaseModel {
   public static async hashPassword(user: User) {
     if(user.$dirty.password) {
       try {
-        user.password = await Hash.use('bcrypt').make(user.password)
+        user.password = await Hash.make(user.password)
       } catch (error) {
         Logger.error(error)
       }
