@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="priyagung elza yogitama" />
+    <meta
+      name="keywords"
+      content="bahasa jepang, nihongo, indonesia, surakarta"
+    />
+    <title>Welcome to Learn Nihongo!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  </head>
+  <style>
+    /* styling this  */
+    html {
+        box-sizing: border-box;
+        font-size: 16px;
+        background-color: #282a36;
+        min-width: 300px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        
+    }
+    
+    header {
+        background-color: rgb(68, 71, 90);
+    }
+    .hero {
+        background-color: #44475a;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 64px;
+        z-index: 20;
+    }
+    .hero {
+        align-items: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .icon {
+        height: 30px;
+        width: 30px;
+        vertical-align: baseline;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-shadow-y {
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    }
+    .sidebar {
+        display: flex;
+    }
+    .sidebar__sidebar {
+        width: 30%;
+        
+    }
+    .sidebar__main {
+        flex: 1;
+        overflow: auto;
+        
+    }
+    .aside {
+        background: #44475a;
+        padding: 2em .5em 0 .5em;
+        height: calc(100vh - 64px);
+        display: block;
+        overflow: hidden;
+        position: fixed;
+        top: 64px;
+        left: 0;
+        z-index: 2;
+        width: 250px;
+    }
+    .aside .menu-list .icon, .aside .menu-list .i {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    .aside a {
+        color: #fff;
+
+    }
+    .menu {
+        font-size: 1rem;
+        position: relative;
+    }
+    .menu-label {
+        color: #bd93f9;
+        margin-left: .5em;
+        font-weight: bold;
+    }
+    .menu-list {
+        line-height: 1.25;
+    }
+    .menu-list a {
+        padding: 0.5em 0.75em;
+    }
+    .menu-list a.is-active {
+        background-color: #ff79c6;
+    }
+    
+    .icon.is-small {
+        height: 1rem;
+        width: 1rem;
+    }
+    
+  </style>
+  <body>
+      <!-- navbar -->
+      <header class="hero">
+        <div class="hero-head">
+            <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a href="" class="navbar-item is--brand has-text-white">
+                        全Zen LMS
+                    </a>
+                </div>
+                <div class="navbar-menu navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="" class="navbar-link">
+                            User
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a href="" class="navbar-item">
+                                Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+      </header>
+        
+      
+      
+      <!-- navbar end -->
+
+      <!-- sidebar -->
+      <div class="sidebar">
+          <aside id="main-sidebar" class="aside">
+              <nav class="menu active-menu">
+                  <p class="menu-label">General</p>
+                  <ul class="menu-list">
+                      <li>
+                          <a href="" class="is-active">
+                              <span class="icon is-small"><i class="fas fa-tachometer"></i></span><span class="menu-text">Dashboard</span>
+                          </a>
+                      </li>
+                  </ul>
+              </nav>
+          </aside>
+          <main class="sidebar__main"></main>
+      </div>
+     
+      
+     
+  </body>
